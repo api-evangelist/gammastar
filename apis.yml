@@ -1,7 +1,23 @@
 aid: gammastar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gammastar.png
 name: gammastar
-description: gammastar is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: GammaStar (GammaStar Medical Group) is a Shanghai-based medical-device company backed by
+  Qiming Venture Partners that develops, manufactures, and services precision radiotherapy and oncotherapy
+  equipment, including rotary cobalt-60 gamma-ray radiosurgery systems, and operates a network of oncotherapy
+  and psychosurgery centers. It is a medical-hardware manufacturer rather than an API provider; enrichment
+  found no public developer portal, API documentation, OpenAPI, SDK, or MCP surface, and the gammastar.com
+  domain currently resolves to a parked "for sale" listing on Atom.com rather than a corporate site.
 url: https://raw.githubusercontent.com/api-evangelist/gammastar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+x-website-status: parked-for-sale
+x-enrichment-note: 'No public API/developer surface found (medical-device manufacturer); gammastar.com is
+  a parked domain on Atom.com. No enrichment artifacts produced. Verified via Qiming portfolio + web search
+  2026-07-19.'
 tags:
 - Company
+- Medical Devices
+- Healthcare
+- Radiotherapy
+- Oncology
+- Medical Equipment
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,8 @@ maintainers:
 common:
 - type: Website
   url: https://gammastar.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
